@@ -9,8 +9,7 @@
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" 
           src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v13.0&appId=2476460782491186&autoLogAppEvents=1" 
-          nonce="Uh93BmYc"
-          src="https://www.facebook.com/YoomeeMobil">
+          nonce="Uh93BmYc">
   </script>
   
   <script>
@@ -44,16 +43,15 @@
     
     FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
-    });
-    
-    {
+      
         status: 'connected',
         authResponse: {
             accessToken: '...',
             expiresIn:'...',
             signedRequest:'...',
             userID:'...'}
-    }
+    });
+    
   </script>
   
   <div class="fb-login-button" 
